@@ -29,8 +29,11 @@ func main() {
 	println("---- TRAVERSALS ----")
 	println("---- PRE ----")
 	tree.preOrderDFS()
+	println()
 	println("---- IN ----")
 	tree.inOrderDFS()
+	println()
 	println("---- POST ----")
 	tree.postOrderDFS()
+	println()
 }

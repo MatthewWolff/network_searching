@@ -9,7 +9,7 @@ func (node *TreeNode) preOrderDFS() {
 	if node == nil {
 		return
 	}
-	_, _ = fmt.Println(node.label)
+	_, _ = fmt.Print(node.label, " ")
 	if node.left != nil {
 		node.left.preOrderDFS()
 	}
@@ -25,7 +25,7 @@ func (node *TreeNode) inOrderDFS() {
 	if node.left != nil {
 		node.left.inOrderDFS()
 	}
-	_, _ = fmt.Println(node.label)
+	_, _ = fmt.Print(node.label, " ")
 	if node.right != nil {
 		node.right.inOrderDFS()
 	}
@@ -41,7 +41,7 @@ func (node *TreeNode) postOrderDFS() {
 	if node.right != nil {
 		node.right.postOrderDFS()
 	}
-	_, _ = fmt.Println(node.label)
+	_, _ = fmt.Print(node.label, " ")
 }
 
 type TreeNode struct {
